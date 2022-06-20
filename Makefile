@@ -1,5 +1,5 @@
-SHELL := /bin/bash
-CSSSRC = $(shell find src/scss-type f -name "*.scss")
+SHELL:=/bin/bash
+CSSSRC=$(shell find src/scss -name "*.scss")
 
 .PHONY: css
 css: admin-theme.css

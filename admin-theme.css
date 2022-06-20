@@ -1,2 +1,3 @@
-body {
-  background-color: red; }
+:root {
+  --color-nav-bg: #ffbe00;
+  --color-nav-fg: #666; }
