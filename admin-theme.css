@@ -1,7 +1,9 @@
 :root {
   --color-nav-bg: #ffbe00;
   --color-nav-fg: #666; 
+
+  --color-mtn:  #FFCB06;
 }
 body {
-  background-color:  red !important;
+  background-color: --color-mtn;
 }
