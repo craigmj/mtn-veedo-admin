@@ -3,7 +3,9 @@
   --color-nav-fg: #666; 
 
   --color-mtn:  #FFCB06;
+
+  --calendar-event-background-color:  var(--color-mtn);
 }
 body {
-  background-color: var(--color-mtn);
+  background-color: #fffff8;
 }
