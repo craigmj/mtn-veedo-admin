@@ -5,6 +5,8 @@
   --color-mtn:  #FFCB06;
 
   --calendar-event-background-color:  var(--color-mtn);
+  --v-work-header-background-color: var(--color-mtn);
+
 }
 body {
   background-color: #fffff8;
