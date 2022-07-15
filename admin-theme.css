@@ -5,5 +5,5 @@
   --color-mtn:  #FFCB06;
 }
 body {
-  background-color: --color-mtn;
+  background-color: var(--color-mtn);
 }
