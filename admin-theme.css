@@ -8,6 +8,7 @@
   --v-work-header-background-color: var(--color-mtn);
   --v-nav1-background-color:  var(--color-mtn);
 
+  --color-highlight:  var(--color-mtn);
 }
 body {
   background-color: #fffff8;
