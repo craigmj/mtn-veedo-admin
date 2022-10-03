@@ -15,7 +15,7 @@ text: |
   MTN Veedo Webinar-On-Demand
 
 html: >
-{{ include "html-header.html" | html }}
+  {{ include "html-header.html" | html }}
   <p>Dear {{.User.Name}},</p>
 
   <p>You MTN Veedo Webinar-On-Demand account has been created.</p>
@@ -26,4 +26,4 @@ html: >
 
   <p><a href="{{.Link}}">{{.Link}}</a></p>
 
-{{include "html-footer.html" | html }}
+  {{include "html-footer.html" | html }}

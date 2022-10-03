@@ -1,64 +1,24 @@
-subject: Your Veedo Admin access has been Granted!
+subject: Your MTN Veedo Webinar-On-Demand Account
 from: no-reply@veedo.live
 text: |
   Dear {{.User.Name}},
 
   You have been given permissions to administer the '{{.Client.Name}}' account
-  on Veedo Control.
+  on MTN Veedo Webinar-On-Demand.
 
   Login here to see your new permissions!
-  {{.Link}}
-
   {{.Link}}
 
   Kind regards,
-  Team Veedo
+  MTN Veedo Webinar-On-Demand
 html: >
-  <!doctype html>
-  <html>
-  <body>
-  <p>Dear {{.User.Name}},</p>
+  {{include "html-header.html" | html}}
 
   <p>You have been given permissions to administer the '{{.Client.Name}}' account
-  on Veedo Control.</p>
+  on MTN Veedo Webinar-On-Demand.</p>
 
-  Login here to see your new permissions!
+  <p><a href="{{.Link}}">Login to see your new permissions.</a></p>
+
   <p><a href="{{.Link}}">{{.Link}}</a></p>
 
-  <p><a href="{{.Link}}">{{.Link}}</a></p>
-
-  <p>Kind regards,<br />
-  Team Veedo
-  </p>
-  <svg viewBox="0 0 150 60" style="display:none;">
-    <style>
-    :root {
-        --veedo-color: #365676;
-    }
-    .veedo {
-        font-family: 'sans-serif';
-        font-weight: bold;
-        stroke-width: 0;
-        fill: white;
-        font-size: 30px;
-        letter-spacing: 4px;
-    }</style>
-    <defs>
-        <g id="V"><path d="M0 0L50 0L25 45Z"></path></g>
-        <g id="E"><path d="M0 0L45 0L0 22.5L45 45L0 45Z"></path></g>
-        <g id="D"><path d="M0 0L0 45L40 22.5Z"></path></g>
-        <g id="O"><circle cx="25" cy="22.5" r="23"></circle></g>
-        <g id="logo-shapes" stroke-width="2" stroke-linejoin="round">		
-            <use href="#V" x="0" y="0"></use>		
-            <use href="#D" x="53" y="0"></use>
-            <use href="#O" x="94" y="0"></use>
-        </g>
-    </defs>
-  </svg>
-  <svg viewBox="0 0 150 60" width="90px">
-  <g stroke="transparent" fill="var(--color-nav-focus-bg)" transform="translate(5 5)">
-  <use href="#logo-shapes" x="0" y="0"></use>
-  </g>
-  </svg>
-  </body>
-  <html>
+  {{include "html-footer.html" | html}}
