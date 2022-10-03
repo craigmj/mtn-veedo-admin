@@ -1,0 +1,10 @@
+subject: Server Resize Failure on {{.Title}}
+from: no-reply@veedo.live
+text: >
+  Resizing {{.Title}} failed with error:
+
+  {{.Error}}
+  
+html: >
+  <p>Resizing {{.Title}} failed with error:</p>
+  <div><pre>{{.Error}}</pre></div>

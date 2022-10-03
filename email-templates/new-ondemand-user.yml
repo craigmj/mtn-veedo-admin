@@ -1,0 +1,29 @@
+subject: Your MTN Veedo Webinar-On-Demand Account
+from: no-reply@veedo.live
+text: |
+  Dear {{.User.Name}},
+
+  You MTN Veedo Webinar-On-Demand account has been created.
+
+  Your username is: {{.User.Username}}
+
+  To set your password and log in, please follow this link:
+
+  {{.Link}}
+
+  Kind regards,
+  MTN Veedo Webinar-On-Demand
+
+html: >
+{{ include "html-header.html" | html }}
+  <p>Dear {{.User.Name}},</p>
+
+  <p>You MTN Veedo Webinar-On-Demand account has been created.</p>
+
+  <p>You username is <span class="username">{{.User.Username}}</span></p>
+
+  <p>To set your password and log in, please follow this link:</p>
+
+  <p><a href="{{.Link}}">{{.Link}}</a></p>
+
+{{include "html-footer.html" | html }}

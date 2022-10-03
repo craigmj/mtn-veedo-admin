@@ -1,0 +1,10 @@
+subject: Server Build Failure on {{.Title}}
+from: no-reply@veedo.live
+text: >
+  Building {{.Title}} failed with error:
+
+  {{.Error}}
+  
+html: >
+  <p>Building {{.Title}} failed with error:</p>
+  <div>{{.Error}}</div>
